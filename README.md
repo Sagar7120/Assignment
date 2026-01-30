@@ -1,8 +1,8 @@
-"# Assignment" 
+**Kion Group Assignment**
 
-🚀 CI/CD Pipeline – Foundational Implementation (Demo Project)
+**🚀 CI/CD Pipeline – Foundational Implementation**
 
-📌 Project Overview
+**📌 Project Overview**
 
 This repository demonstrates a basic end-to-end CI/CD pipeline implemented using GitHub Actions, Docker, and Kubernetes (AWS EKS).
 
@@ -10,9 +10,9 @@ The goal of this project is to showcase CI/CD fundamentals such as automated bui
 
 While the original case study is focused on ROS2 Jazzy robotics software, a Java (Maven) application is used here as a demo workload to illustrate the CI/CD flow clearly.
 
-Note:- This implementation serves as a starting point and is intentionally kept simple, with clear scope for improvements and extensions.
+**Note:-** This implementation serves as a starting point and is intentionally kept simple, with clear scope for improvements and extensions.
 
-🎯 What This Pipeline Demonstrates
+**🎯 What This Pipeline Demonstrates**
 
 ✔ Automated CI trigger on code changes
 ✔ Consistent build environment
@@ -22,7 +22,7 @@ Note:- This implementation serves as a starting point and is intentionally kept 
 ✔ Kubernetes-based deployment
 ✔ Clear separation of CI/CD stages
 
-🧱 Tools & Technologies Used
+**🧱 Tools & Technologies Used**
 
 Source Control-->	GitHub
 CI/CD Platform-->	GitHub Actions
@@ -34,7 +34,9 @@ Container Registry-->	Docker Hub
 Orchestration-->	Kubernetes
 Cloud Platform-->	AWS (EKS)
 
-🔄 CI/CD Workflow Breakdown
+**🔄 CI/CD Workflow Breakdown**
+
+Note:- I Intentinally kept it simple and the improvement areas are clearly mentioned in the documentation — so please don’t judge it too early 😉
 
 1️⃣ Compile Stage
 
@@ -66,7 +68,7 @@ Configures AWS credentials and Kubernetes access
 Deploys the application to an AWS EKS cluster using a Kubernetes manifest
 
 
-📦 Repository Structure
+**📦 Repository Structure**
 .
 ├── .github/
 │   └── workflows/
@@ -83,10 +85,10 @@ Deploys the application to an AWS EKS cluster using a Kubernetes manifest
 ├── src/
 └── README.md
 
-Note:- We will be calling out multiple yml files in main file instead of having single main lengthy file. 
+**Note:-** We will be calling out multiple yml files in main file instead of having single main lengthy file. 
 I have intentionally kept the deployment.yml file in the same repo. In actual project we will have seperate repos.
 
-🔐 Secrets Management
+**🔐 Secrets Management**
 
 Sensitive information is managed using GitHub Secrets:
 
@@ -100,13 +102,13 @@ EKS_KUBECONFIG --> Kubernetes cluster access
 
 This project intentionally leaves room for enhancements. Possible improvements include:
 
-CI Enhancements
+**CI Enhancements**
 
 - Integration of Branching strategy and Branch validation rules
 - Add unit and integration test stages, For higher environment need to add Performance and Regression testing.
 - Parallelize jobs for faster feedback
 
-Security Enhancements- 
+**Security Enhancements**
 
 - SAST, SCA, OPA (Policy-as-Code) enforcement is pending
 - Container image scanning
@@ -114,21 +116,21 @@ Security Enhancements-
 - Image signing and verification
 - Dependency vulnerability gating
 
-Deployment Improvements
+**Deployment Improvements**
 
 - Helm-based deployments
 - Blue-green or canary releases
 - Environment-specific deployments
 - Rollback strategies
 
-Monitoring & Observability
+**Monitoring & Observability**
 
 - Centralized logging/Monitoring (Datadog)
 - Metrics collection (Prometheus)
 - Dashboards (Grafana)
 - Alerting and health checks
 
-Robotics / ROS2 Extension
+**Robotics / ROS2 Extension**
 
 - Replace Maven build with colcon build
 - Add ROS2 unit and simulation tests
@@ -136,5 +138,5 @@ Robotics / ROS2 Extension
 - Deploy to edge or robotic environments
 
 
-👨‍💻 Author
+**👨‍💻 Author**
 Sagar Shelki
