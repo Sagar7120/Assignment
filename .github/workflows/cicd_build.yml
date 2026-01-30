@@ -69,7 +69,7 @@ jobs:
 
   build_docker_image_and_push:
     runs-on: build-server
-    needs: security-check
+    needs: build_project
 
     steps:
     - uses: actions/checkout@v4
