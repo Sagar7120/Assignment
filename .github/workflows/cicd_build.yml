@@ -45,8 +45,8 @@ jobs:
       run: gitleaks detect source . -r gitleaks-report.json -f json
 
   build_project:
-    runs-on: self-hosted
-    needs: test
+    runs-on: build-server
+    needs: security-check
     steps:
     - uses: actions/checkout@v4
     - name: Set up JDK 17
