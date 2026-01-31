@@ -62,7 +62,7 @@ Downloads the built artifact
 Builds a Docker image using a Dockerfile
 Pushes the image to Docker Hub
 
-5️⃣ Kubernetes Deployment
+**5️⃣ Kubernetes Deployment- using Tearraform (EKS Cluster Setup)- https://github.com/Sagar7120/EKS_terraform**
 
 Configures AWS credentials and Kubernetes access
 Deploys the application to an AWS EKS cluster using a Kubernetes manifest
