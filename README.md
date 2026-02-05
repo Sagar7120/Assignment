@@ -1,4 +1,4 @@
-**Kion Group Assignment**
+**Assignment**
 
 **🚀 CI/CD Pipeline – Foundational Implementation**
 
